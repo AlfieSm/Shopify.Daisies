@@ -5,7 +5,7 @@
 {% endif %}
 
 <div class="{{container_class}} my-5">
-    <h1>{{ page.title | date: '%B %d, %Y' }}</h1>
+    <h1>{{ page.title | date: 'date' }}</h1>
     {% if section.settings.show_publish_date %}
          <small>{{ page.published_at }}</small>
     {% endif %}
